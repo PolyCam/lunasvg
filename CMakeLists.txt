@@ -109,3 +109,6 @@ option(LUNASVG_BUILD_EXAMPLES "Build examples" ON)
 if(LUNASVG_BUILD_EXAMPLES)
     add_subdirectory(examples)
 endif()
+
+set(CPACK_GENERATORS "TGZ")
+include(CPack)
